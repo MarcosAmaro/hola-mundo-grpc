@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message Empty {}
+
+message CountryDTO {
+	int64 idCountry = 1;
+	int64 idRegion = 2;
+	string countryName = 3;
+	string regionName = 4;
+	string countryCodeMain = 5;
+	int64 nationalDay = 6;
+}
+
+message CountryListResponse {
+	repeated CountryDTO countries = 1;
+}
+
+service CountryService {
+   rpc GetList(Empty) returns (CountryListResponse);
+   rpc UpdateCountry(CountryDTO) returns(Empty);
+}
