@@ -1,4 +1,4 @@
-#Ejemplo de GRPC con ReactJS, Flask y Java#
+# Ejemplo de GRPC con ReactJS, Flask y Java
 Este repositorio contiene un ejemplo de una aplicación que utiliza gRPC para la comunicación entre diferentes componentes:
 
 **grpc_view**: Una vista en ReactJS que presenta una tabla que se llena con los datos de la base de datos de países de MariaDB. La base de datos de muestra se encuentra disponible en MariaDB Sample Database. La vista también cuenta con la funcionalidad de edición de los registros que se persisten en la base.
@@ -7,7 +7,7 @@ Este repositorio contiene un ejemplo de una aplicación que utiliza gRPC para la
 
 **grpc_server**: El servidor gRPC principal, implementado en Java. Este servidor es el encargado final de tomar los datos de la base de datos y enviarlos al cliente gRPC (grpc_client). Además, se encarga de actualizar los campos que el usuario edita en la vista.
 
-#Requisitos#
+# Requisitos
 Asegúrate de tener instalados los siguientes componentes:
 
 * Node.js
